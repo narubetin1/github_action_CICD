@@ -8,11 +8,11 @@ from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.types import StringType
 
 
-partition_date = sys.argv[1] #YYYY-MM-DD
+#partition_date = sys.argv[1] #YYYY-MM-DD
 
-ld_year = partition_date[0:4]
-ld_month = partition_date[5:7]
-ld_day = partition_date[8:10]
+# ld_year = partition_date[0:4]
+# ld_month = partition_date[5:7]
+# ld_day = partition_date[8:10]
 
 spark = (
     SparkSession.builder
